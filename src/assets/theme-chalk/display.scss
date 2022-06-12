@@ -1,0 +1,69 @@
+@import '@src/scss/breakpoints.scss';
+
+.hidden {
+  &-xs-only {
+    @media only screen and (max-width: ($sm - 1)) {
+      display: none;
+    }
+  }
+
+  &-sm-only {
+    @media only screen and (min-width: $sm) and (max-width: ($md - 1)) {
+      display: none;
+    }
+  }
+
+  &-sm-and-down {
+    @media only screen and (max-width: ($md - 1)) {
+      display: none;
+    }
+  }
+
+  &-sm-and-up {
+    @media only screen and (min-width: $sm) {
+      display: none;
+    }
+  }
+
+  &-md-only {
+    @media only screen and (min-width: $md) and (max-width: ($lg - 1)) {
+      display: none;
+    }
+  }
+
+  &-md-and-down {
+    @media only screen and (max-width: ($lg - 1)) {
+      display: none;
+    }
+  }
+
+  &-md-and-up {
+    @media only screen and (min-width: $md) {
+      display: none;
+    }
+  }
+
+  &-lg-only {
+    @media only screen and (min-width: $lg) and (max-width: ($xl - 1)) {
+      display: none;
+    }
+  }
+
+  &-lg-and-down {
+    @media only screen and (max-width: ($xl - 1)) {
+      display: none;
+    }
+  }
+
+  &-lg-and-up {
+    @media only screen and (min-width: $xl) {
+      display: none;
+    }
+  }
+
+  &-lg-only {
+    @media only screen and (min-width: $lg) {
+      display: none;
+    }
+  }
+}
